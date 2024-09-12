@@ -11,7 +11,7 @@ def max_num(n, m):
     for i in range(1,end):
         if n % i == 0 and m % i == 0:
             idx = i
-        else: continue
+    
     print(idx)
 
 max_num(n,m)
