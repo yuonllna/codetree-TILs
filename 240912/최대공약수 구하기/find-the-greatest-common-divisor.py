@@ -8,7 +8,7 @@ def max_num(n, m):
     idx = 1
     if n > m: end = m
     else: end = n
-    for i in range(1,end):
+    for i in range(1,end+1):
         if n % i == 0 and m % i == 0:
             idx = i
         elif n % i == 1 and m % i == 1:
