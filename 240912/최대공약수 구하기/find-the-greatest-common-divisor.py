@@ -6,7 +6,7 @@ m = int(arr[1])
 
 def max_num(n, m):
     idx = 1
-    if n >= m: end = m
+    if n > m: end = m
     else: end = n
     for i in range(1,end):
         if n % i == 0 and m % i == 0:
