@@ -11,6 +11,8 @@ def max_num(n, m):
     for i in range(1,end):
         if n % i == 0 and m % i == 0:
             idx = i
+        elif n % i == 1 and m % i == 1:
+            idx = i
     
     print(idx)
 
