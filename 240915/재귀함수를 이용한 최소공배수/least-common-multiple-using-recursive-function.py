@@ -12,7 +12,7 @@ def gcd(a, b):
 
 def func(i):
     if i == 0:
-        return arr[i]
+        return arr[0]
     if gcd(arr[i], arr[i-1]) != 1:
         if i == 1:
             return gcd(arr[i], arr[i-1])
