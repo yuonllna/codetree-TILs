@@ -1,10 +1,14 @@
-n = input()
+# 변수 선언 및 입력:
+n = int(input())
+arr = list(map(int, input().split()))
 
-inp = input()
-_list = inp.split(" ")
 
-for i in _list:
-    i = int(i)
-    if i % 2 == 0:
-        print(i // 2, end=" ")
-    else: print(i, end=" ")
+def modify(arr):
+    for i in range(n):
+        if arr[i] % 2 == 0:
+            arr[i] //= 2
+
+
+modify(arr)
+for elem in arr:
+    print(elem, end=" ")
