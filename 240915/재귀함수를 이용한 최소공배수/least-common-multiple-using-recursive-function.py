@@ -14,7 +14,6 @@ def func(i):
         return arr[0]
     if gcd(arr[i], arr[i-1]) != 1:
         return gcd(arr[i], arr[i-1]) * func(i-2)
-    if gcd(arr[i], arr[i-1]) == 1:
-        return arr[i] * func(i-1)
+    return arr[i] * func(i-1)
 
 print(func(n-1))
