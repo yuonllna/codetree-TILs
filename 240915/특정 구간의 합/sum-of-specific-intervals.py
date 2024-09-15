@@ -1,5 +1,5 @@
 n, m = map(int, input().split())
-arr = list(map(int, input().split(" ")))
+arr = list(map(int, input().split()))
 
 def func(n, m, arr):
     for _ in range(0, m):
