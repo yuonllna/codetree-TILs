@@ -8,4 +8,4 @@ def func(n):
     else:
         return func(n-1)*func(n-2)% 100
 
-print(func(5))
+print(func(n))
