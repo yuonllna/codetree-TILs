@@ -1,8 +1,12 @@
 n = int(input())
 
-arr = list(map(int, input().split()))
+org = list(map(int, input().split()))
+sorted_part = []
 
-arr.sort()
 for i in range(n):
-    if (i+1) % 2 != 0:
-        print(arr[(i+1)//2], end=" ")
+    sorted_part.append(org[i])
+    sorted_part.sort()  # 현재까지의 부분을 정렬
+    
+    if i % 2 == 0:  # 홀수 번째 입력일 때
+        # 중간 값 출력
+        print(sorted_part[i // 2], end=" ")
