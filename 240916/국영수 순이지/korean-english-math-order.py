@@ -9,7 +9,7 @@ n = int(input())
 students = []
 for i in range(n):
     name, kor, eng, math = tuple(input().split())
-    students.append(Student(name, kor, eng, math))
+    students.append(Student(name, int(kor), int(eng), int(math)))
 
 
 students.sort(key=lambda x: (-x.kor, -x.eng, -x.math))
