@@ -12,7 +12,7 @@ cnt1 = 0
 arr.sort()
 for i in range(n):
     cnt2 = 0
-    for j in range(len(t)):
+    for j in range(0,len(t)):
         if arr[i][j] == t[j]:
             cnt2 += 1
     if cnt2 == len(t):
