@@ -12,7 +12,7 @@ for i in range(n):
     coordinates.append(Coordinate(int(x), int(y), i+1))
 
 
-coordinates.sort(key=lambda x: (abs(x.x + x.y), x.num))
+coordinates.sort(key=lambda x: ((abs(x.x) + abs(x.y)), x.num))
 
 for coordinate in coordinates:
    print(coordinate.num)
