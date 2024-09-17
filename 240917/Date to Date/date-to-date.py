@@ -9,9 +9,8 @@ if month == 0:
         print(1)
     else: print(d2 - d1)
     
-    
 else:
-    sum = num_of_days[m1-1] - d1 + d2
-    for i in range(m1, m2-1):
+    sum = num_of_days[m1] - d1 + d2 + 1
+    for i in range(m1+1, m2):
         sum += num_of_days[i]
     print(sum)
