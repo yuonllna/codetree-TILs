@@ -1,6 +1,6 @@
 a, b, c = tuple(map(int, input().split()))
 
-if a < 11 and a >= 11 and b < 11 or b >= 11 and c < 11:
+if a < 11 or (a >= 11 and b < 11) or (b >= 11 and c < 11):
     print(-1)
 else: 
     day = a - 11
