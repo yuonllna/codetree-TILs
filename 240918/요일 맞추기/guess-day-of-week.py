@@ -18,7 +18,7 @@ else:
             sum += num_of_days[i]
         print(week_of_days[(tmp + sum)%7])
     else: 
-        sum = num_of_days[m2] - d1 + d2 
+        sum = num_of_days[m2] - d2 + d1
         for i in range(m2+1, m1):
             sum += num_of_days[i]
         print(week_of_days[(tmp - sum)%7])
