@@ -13,12 +13,12 @@ if month == 0:
 
 else:
     if month > 0: 
-        sum = num_of_days[m1] - d1 + d2 + 1
+        sum = num_of_days[m1] - d1 + d2
         for i in range(m1+1, m2):
             sum += num_of_days[i]
         print(week_of_days[(tmp + sum)%7])
     else: 
-        sum = num_of_days[m2] - d1 + d2 + 1
+        sum = num_of_days[m2] - d1 + d2 
         for i in range(m2+1, m1):
             sum += num_of_days[i]
         print(week_of_days[(tmp - sum)%7])
