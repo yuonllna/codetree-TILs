@@ -9,9 +9,4 @@ for _ in range(k):
     for j in range(start, end + 1):
         block[j] += 1
 
-max = 0
-for b in block:
-    if max < b:
-        max = b
-
-print(max)
+print(max(block))
