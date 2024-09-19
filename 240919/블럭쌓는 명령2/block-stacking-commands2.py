@@ -1,7 +1,7 @@
 n, k = map(int, input().split())
 
 block = []
-for i in range(n):
+for i in range(n + 1):
     block.append(0)
 
 for _ in range(k):
