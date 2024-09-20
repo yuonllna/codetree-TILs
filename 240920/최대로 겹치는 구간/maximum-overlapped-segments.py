@@ -9,11 +9,5 @@ for _ in range(n):
     for j in range(x1 + 100, x2 + 100):
         block[j] += 1
 
-max = 0
-for i in range(0, 201):
-    if i == 0:
-        if block[i] > max:
-            max = block[i]
-    if block[i-1] == block[i] and block[i-1] > max and block[i] > max:
-        max = block[i] 
-print(max)
+
+print(max(block))
