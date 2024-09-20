@@ -38,6 +38,7 @@ for i in range(0, 10001):
         black_n += 1
     elif flag[i] == False:
         white_n += 1
+    else: continue
         
 
 print(white_n, black_n, grey_n)
