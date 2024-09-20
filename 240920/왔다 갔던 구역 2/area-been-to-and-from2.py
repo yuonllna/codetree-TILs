@@ -12,7 +12,7 @@ for _ in range(n):
         for j in range(cur, cur + x + 1):
             block[j] += 1
             cur = x
-    else: 
+    elif d == "L":
         for j in range(cur, cur - x, -1):
             block[j] += 1
             cur = x
