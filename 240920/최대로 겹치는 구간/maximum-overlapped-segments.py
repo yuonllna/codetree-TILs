@@ -1,7 +1,7 @@
 n = int(input())
 
 block = []
-for i in range(0, 202):
+for i in range(0, 201):
     block.append(0)
 
 for _ in range(n):
@@ -10,10 +10,10 @@ for _ in range(n):
         block[j] += 1
 
 max = 0
-for i in range(0, 202):
+for i in range(0, 201):
     if i == 0:
         if block[i] > max and block[i+1] > max:
             max = block[i]
-    if block[i-1] > max and block[i] > max:
+    if block[i-1] == block[i] and block[i-1] > max and block[i] > max:
         max = block[i]
 print(max)
