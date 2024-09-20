@@ -11,11 +11,11 @@ for _ in range(n):
     if d == "R":
         for j in range(cur, cur + x + 1):
             block[j] += 1
-            cur += x
+            cur = x
     else:
         for j in range(cur, cur - x, -1):
             block[j] += 1
-            cur -= x
+            cur = x
     
 
 sum = 0
