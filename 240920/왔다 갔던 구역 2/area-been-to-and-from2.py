@@ -18,7 +18,7 @@ for _ in range(n):
             cur = x
 
 sum = 0
-for i in range(len(block)):
+for i in range(0, 101):
     if block[i] >= 2:
         sum += 1
 
