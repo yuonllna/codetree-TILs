@@ -15,7 +15,7 @@ for _ in range(n):
     elif d == "L":
         for j in range(cur, cur - x, -1):
             block[j] += 1
-            cur += x
+            cur -= x
     
 
 sum = 0
