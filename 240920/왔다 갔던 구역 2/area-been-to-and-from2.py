@@ -12,7 +12,7 @@ for _ in range(n):
         for j in range(idx, idx + x + 1):
             block[j] += 1        
     else:
-        for j in range(idx, idx - x, -1):
+        for j in range(idx, idx - x - 1, -1):
             block[j] += 1
     idx += x
     
