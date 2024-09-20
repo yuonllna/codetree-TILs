@@ -1,7 +1,7 @@
 n = int(input())
 
 block = []
-for i in range(0, 101):
+for i in range(0, 1001):
     block.append(0)
 
 cur = 0
@@ -10,20 +10,16 @@ for _ in range(n):
     x = int(x)
     if d == "R":
         for j in range(cur, cur + x + 1):
-            if j > 100:
-                break
             block[j] += 1
             cur += x
-    elif d == "L":
+    else:
         for j in range(cur, cur - x, -1):
-            if j > 100:
-                break
             block[j] += 1
             cur -= x
     
 
 sum = 0
-for i in range(0, 101):
+for i in range(len(block)):
     if block[i] >= 2:
         sum += 1
 
