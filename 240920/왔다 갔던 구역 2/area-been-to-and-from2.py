@@ -14,13 +14,12 @@ for _ in range(n):
             block[j] += 1      
     else:
         end = cur - x
-        for j in range(cur, end, -1):
+        for j in range(cur - 1, end - 1, -1):
             block[j] += 1
     cur = end 
 
 sum = 0
-for i in range(len(block)):
+for i in range(0, 2001):
     if block[i] >= 2:
         sum += 1
-
 print(sum)
