@@ -10,10 +10,14 @@ for _ in range(n):
     x = int(x)
     if d == "R":
         for j in range(cur, cur + x + 1):
+            if j > 100:
+                break
             block[j] += 1
             cur += x
     elif d == "L":
         for j in range(cur, cur - x, -1):
+            if j > 100:
+                break
             block[j] += 1
             cur -= x
     
