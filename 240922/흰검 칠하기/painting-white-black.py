@@ -3,13 +3,13 @@ n = int(input())
 black = []
 white = []
 flag = []
-for _ in range(0, 100001):
+for _ in range(0, 100002):
     black.append(0)
 
-for _ in range(0, 100001):
+for _ in range(0, 100002):
     white.append(0)
 
-for _ in range(0, 100001):
+for _ in range(0, 100002):
     flag.append(None)
 
 cur = 50000
