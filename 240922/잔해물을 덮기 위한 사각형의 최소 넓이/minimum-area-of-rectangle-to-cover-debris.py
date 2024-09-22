@@ -12,20 +12,20 @@ for i in range(x3 + offset, x4 + offset):
         if arr[i][j] == 1:
             arr[i][j] = 0
 
-xmin, ymin, xmax, ymax = x1, y1, x2, y2
+xmin, ymin, xmax, ymax = 1001, 1001, -1001, -1001
 for i in range(0, 2001):
     for j in range(0, 2001):
         if arr[i][j] == 1:
-            if xmin > i - offset:
-                xmin = i - offset
-            if xmax < i - offset:
-                xmax = i - offset
-            if ymin > j - offset:
-                ymin = j - offset
-            if ymax < j - offset:
-                ymax = j - offset
+            if xmin > i - offset + 1:
+                xmin = i - offset + 1
+            if xmax < i - offset + 1:
+                xmax = i - offset + 1
+            if ymin > j - offset + 1:
+                ymin = j - offset + 1
+            if ymax < j - offset + 1:
+                ymax = j - offset + 1
         else: continue
-            
+
 sum = 0
 if arr[xmin + offset][ymin + offset] == 0 and arr[xmax + offset][ymax + offset] == 0:
     print(0)
