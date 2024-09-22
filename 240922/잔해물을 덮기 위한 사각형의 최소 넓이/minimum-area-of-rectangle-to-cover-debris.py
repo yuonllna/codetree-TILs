@@ -22,7 +22,7 @@ for i in range(x3 + offset, x4 + offset):
                 ymax = j
             arr[i][j] = 0
 
-
+print(xmin, xmax, ymin, ymax)
 if arr[xmin + offset][ymin + offset] == 0 and arr[xmax + offset][ymax + offset] == 0:
     print(0)
 else:
