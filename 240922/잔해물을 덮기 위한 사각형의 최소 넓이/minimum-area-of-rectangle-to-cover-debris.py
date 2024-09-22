@@ -16,12 +16,12 @@ xmin, ymin, xmax, ymax = 1001, 1001, -1001, -1001
 for i in range(0, 2001):
     for j in range(0, 2001):
         if arr[i][j] == 1:
-            if xmin > i - offset + 1:
-                xmin = i - offset + 1
+            if xmin > i - offset:
+                xmin = i - offset
             if xmax < i - offset + 1:
                 xmax = i - offset + 1
-            if ymin > j - offset + 1:
-                ymin = j - offset + 1
+            if ymin > j - offset:
+                ymin = j - offset
             if ymax < j - offset + 1:
                 ymax = j - offset + 1
         else: continue
