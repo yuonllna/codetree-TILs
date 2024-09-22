@@ -3,16 +3,16 @@ n = int(input())
 black = []
 white = []
 flag = []
-for _ in range(0, 10001):
+for _ in range(0, 100001):
     black.append(0)
 
-for _ in range(0, 10001):
+for _ in range(0, 100001):
     white.append(0)
 
-for _ in range(0, 10001):
+for _ in range(0, 100001):
     flag.append(None)
 
-cur = 5000
+cur = 50000
 for _ in range(n):
     x, d = tuple(input().split())
     x = int(x)
@@ -30,7 +30,7 @@ for _ in range(n):
 black_n = 0
 white_n = 0
 grey_n = 0
-for i in range(0, 10001):
+for i in range(0, 100001):
     if black[i] >= 2 and white[i] >= 2:
         grey_n += 1
     elif flag[i] == True:
