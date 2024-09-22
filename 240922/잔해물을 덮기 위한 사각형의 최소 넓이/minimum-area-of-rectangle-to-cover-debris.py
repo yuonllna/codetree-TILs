@@ -23,9 +23,12 @@ for i in range(x3 + offset, x4 + offset):
                 xmax = j
             arr[i][j] = 0
 
-sum = 0
-for i in range(xmin + offset, xmax + offset):
-    for j in range(ymin + offset, ymax + offset):
-        sum += 1
 
-print(sum)
+if arr[xmin + offset][ymin + offset] == 0 and arr[xmax + offset][ymax + offset] == 0:
+    print(0)
+else:
+    sum = 0
+    for i in range(xmin + offset, xmax + offset):
+        for j in range(ymin + offset, ymax + offset):
+            sum += 1
+    print(sum)
