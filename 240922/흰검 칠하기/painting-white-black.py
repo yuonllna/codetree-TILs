@@ -17,16 +17,15 @@ for _ in range(n):
     x, d = tuple(input().split())
     x = int(x)
     if d == "R":
-        end = cur + x
-        for j in range(cur, end):
+        for j in range(cur, cur + x):
             black[j] += 1
-            flag[j] = True  
+            flag[j] = True
+        cur = cur + x - 1
     else:
-        end = cur - x
-        for j in range(cur - 1, end - 1, -1):
+        for j in range(cur, cur - x, -1):
             white[j] += 1  
             flag[j] = False
-    cur = end 
+        cur = cur - x + 1
 
 black_n = 0
 white_n = 0
