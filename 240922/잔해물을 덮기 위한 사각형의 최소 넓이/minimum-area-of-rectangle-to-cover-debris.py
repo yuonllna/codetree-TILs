@@ -1,5 +1,5 @@
 offset = 1000
-arr = [[0] * 2001 for _ in range(2001)]
+arr = [[0] * 3001 for _ in range(3001)]
 
 x1, y1, x2, y2 = tuple(map(int,input().split()))
 for i in range(x1 + offset, x2 + offset):
@@ -13,8 +13,8 @@ for i in range(x3 + offset, x4 + offset):
             arr[i][j] = 0
 
 xmin, ymin, xmax, ymax = 1001, 1001, -1001, -1001
-for i in range(0, 2001):
-    for j in range(0, 2001):
+for i in range(0, 3001):
+    for j in range(0, 3001):
         if arr[i][j] == 1:
             if xmin > i - offset:
                 xmin = i - offset
