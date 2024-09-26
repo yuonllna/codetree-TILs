@@ -17,9 +17,15 @@ for _ in range(m):
         pos_b[time_b] = pos_b[time_b - 1] + v
         time_b += 1
 
-winner = 0 
+winner = 0
+if pos_a[1] > pos_b[1]:
+    winner = 1
+elif pos_a[1] < pos_b[1]:
+    winner = 2
+else: winner = 0
 sum = 0
-for i in range(2, time_a):  
+
+for i in range(2, min(time_a, time_b)):  
     if pos_a[i] > pos_b[i] and pos_a[i-1] <= pos_b[i-1]:  
         if winner != 1:
             sum += 1
