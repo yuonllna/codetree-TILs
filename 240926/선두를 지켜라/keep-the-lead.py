@@ -17,14 +17,12 @@ for _ in range(m):
         pos_b[time_b] = pos_b[time_b - 1] + v
         time_b += 1
 
-# winner 설정
 winner = 0
 if pos_a[1] > pos_b[1]:
     winner = 1
 elif pos_a[1] < pos_b[1]:
     winner = 2
 
-# 선두 변경 횟수
 sum = 0
 
 for i in range(2, min(time_a, time_b)):  
