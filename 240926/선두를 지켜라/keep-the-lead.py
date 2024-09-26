@@ -21,9 +21,9 @@ for _ in range(m):
 sum = 0
 winner = (pos_a[1] if pos_a[1] > pos_b[1] else pos_b[1])
 for i in range(2, time_a):
-    if pos_a[i] > pos_b[i] and pos_a[i-1] <= pos_b[i-1]:
+    if pos_a[i] >= pos_b[i] and pos_a[i-1] < pos_b[i-1]:
         sum += 1
-    elif pos_a[i] < pos_b[i] and pos_a[i-1] >= pos_b[i-1]:
+    elif pos_a[i] <= pos_b[i] and pos_a[i-1] > pos_b[i-1]:
         sum += 1
 
 print(sum)
