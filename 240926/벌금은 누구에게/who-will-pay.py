@@ -1,7 +1,7 @@
 n, m, k = tuple(map(int,input().split()))
 
-stu = [0] * 101
-ans = [-1] * 101
+stu = [0] * 1000001
+ans = [-1] * 1000001
 idx = 0
 for _ in range(m):
     num = int(input())
