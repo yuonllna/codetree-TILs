@@ -17,11 +17,11 @@ for _ in range(m):
         pos_b[time_b] = pos_b[time_b - 1] + v
         time_b += 1
 
-sum = 0
+sum = 1
 for i in range(2, min(time_a, time_b)):
     if pos_a[i] > pos_b[i] and pos_a[i-1] <= pos_b[i-1]:
         sum += 1
     elif pos_a[i] < pos_b[i] and pos_a[i-1] >= pos_b[i-1]:
         sum += 1
 
-print(sum)
+print(sum -1)
