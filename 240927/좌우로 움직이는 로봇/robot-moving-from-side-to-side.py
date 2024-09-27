@@ -26,7 +26,7 @@ elif time_a < time_b:
 	for i in range(time_a, time_b + 1):
 		pos_a[i] = pos_a[i - 1]
 
-for i in range(0, max(time_a, time_b)):
+for i in range(1, max(time_a, time_b)):
     if pos_a[i] == pos_b[i] and pos_a[i-1] < pos_b[i-1]:
         ans += 1
     elif pos_a[i] == pos_b[i] and pos_a[i-1] > pos_b[i-1]:
