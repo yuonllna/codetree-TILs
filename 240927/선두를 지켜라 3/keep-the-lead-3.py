@@ -18,9 +18,9 @@ for _ in range(m):
         time_b += 1
 
 
-sum = 0
+sum = 1
 for i in range(1, time_a):
-    if pos_a[i] == pos_b[i]:
+    if pos_a[i] == pos_b[i] and pos_a[i-1] != pos_b[i-1]:
         sum += 1
     if pos_a[i] >= pos_b[i] and pos_a[i-1] < pos_b[i-1]:
         sum += 1
