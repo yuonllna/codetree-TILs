@@ -1,5 +1,6 @@
 n = int(input())
 arr = [list(input()) for _ in range(n)]
+visited = [[False] * n for _ in range(n)]
 k = int(input())
 
 # 오른쪽, 아래, 왼쪽, 위
@@ -23,7 +24,7 @@ elif 3*n + 1 <= k <= 4*n:
     x, y = k - 4*n, 0
     if k - 4*n < 0:
         x += n
-
+visited[x][y] = True
 cnt = 0
 while True:
     if arr[x][y] == "/":
@@ -44,8 +45,10 @@ while True:
             dir_num = 2
         elif dir_num == 2:
             dir_num = 3
+    
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
-    if 0 <= nx < n and 0 <= ny < n:
+    if 0 <= nx < n and 0 <= ny < n and not visited[nx][ny]:
+            visited[nx][ny] = True
             x, y = nx, ny
             cnt += 1
     else:
