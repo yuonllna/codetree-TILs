@@ -1,5 +1,5 @@
 n, m = tuple(map(int, input().split()))
-arr = [[0] * (n+1) for _ in range(n+1)]
+arr = [[0] * (n) for _ in range(n)]
 
 cnt = 0
 for _ in range(m):
@@ -15,7 +15,7 @@ for _ in range(m):
         cnt += 1
     if c+1 < n and arr[r][c+1] == 1:
         cnt += 1
-    if cnt >= 3:
+    if cnt == 3:
         print(1)
     else: print(0)
     cnt = 0
