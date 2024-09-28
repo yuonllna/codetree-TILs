@@ -1,5 +1,5 @@
 n, m = tuple(map(int, input().split()))
-arr = [[0] * n for _ in range(n)]
+arr = [[0] * (n+1) for _ in range(n+1)]
 
 cnt = 0
 for _ in range(m):
