@@ -2,9 +2,9 @@ n, t = tuple(map(int, input().split()))
 r, c, d = tuple(input().split())
 x = int(r)
 y = int(c)
-arr = [[0] * (n+1) for _ in range(n+1)]
+arr = [[0] * (n) for _ in range(n)]
 
-dxs = [1, 0,  0, -1]
+dxs = [-1, 0,  0, 1]
 dys = [0, 1, -1, 0]
 
 if d == "U":
