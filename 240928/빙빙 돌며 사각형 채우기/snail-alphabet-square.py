@@ -11,11 +11,11 @@ for i in range(2, n * m + 1):
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
     if 0 <= nx < n and 0 <= ny < m and arr[nx][ny] == 0:
         x, y = x + dxs[dir_num], y + dys[dir_num]
-        arr[x][y] = chr(ord('A') + i-1)
+        arr[x][y] = chr(ord('A') + ((i-1) % 26))
     else:
         dir_num = (dir_num + 1) % 4
         x, y = x + dxs[dir_num], y + dys[dir_num]
-        arr[x][y] = chr(ord('A') + i-1)
+        arr[x][y] = chr(ord('A') + ((i-1) % 26))
 
 for i in range(n):
     for j in range(m):
