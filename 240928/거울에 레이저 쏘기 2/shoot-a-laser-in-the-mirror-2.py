@@ -46,7 +46,7 @@ while True:
             dir_num = 3
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
     if 0 <= nx < n and 0 <= ny < n:
-            x, y = x + dxs[dir_num], y + dys[dir_num]
+            x, y = nx, ny
             cnt += 1
     else:
         break
