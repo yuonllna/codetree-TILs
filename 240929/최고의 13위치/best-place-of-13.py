@@ -1,12 +1,9 @@
 n = int(input())
 arr = [list(map(int, input().split())) for _ in range(n)]
 
-max_sum = 0
+max_cnt = 0
 for i in range(n):
-    row_sum = 0
-    for j in range(n):
-        if arr[i][j] == 1:
-            row_sum += 1
-    max_sum = max(max_sum, row_sum)
+    for j in range(n - 2):
+        max_cnt = max(max_cnt, arr[i][j] + arr[i][j + 1] + arr[i][j + 2])
 
-print(max_sum)
+print(max_cnt)
