@@ -6,7 +6,7 @@ y = [0]*101
 for i in range(n):
     x[i], y[i] = tuple(map(int, input().split()))
 
-min_distance = 100000
+min_distance = 1000000000
 for i in range(1, n-1):
     distance = 0
     for j in range(1, n):
